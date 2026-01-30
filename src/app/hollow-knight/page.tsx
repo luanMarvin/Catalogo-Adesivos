@@ -7,15 +7,16 @@ import Logo from "../../../public/images/inkanto.png";
 
 
 //Editables
-const imgfolder = 'hollowk'
+const name = "HK";
+const imgfolder = 'hollowk';
 const images = [
-"grim.jpg",
-"grim02.jpg",
-"HollowKnight01.jpg",
-"HollowKnight02.jpg",
-"hornet 02.jpg",
-"hornet.jpg",
-"radiance.jpg"
+"GRIMM 01.png",
+"GRIMM 02.jpg",
+"HORNET 01.jpg",
+"HORNET 02.jpg",
+"KNIGHT 01.jpg",
+"KNIGHT 02.jpg",
+"RADIANCE 01.jpg"
 ];
 
 export default function HollowKnight() {
@@ -50,7 +51,7 @@ export default function HollowKnight() {
           <div className="max-w-3xl w-full bg-[#18181d] rounded-2xl">
             <Image src={`/images/${imgfolder}/${selected}`} alt={selected} width={300} height={300} className="rounded-xl mx-auto "/>
             <p className="mt-4 text-center text-lg">
-              LOL {selected.split('.').slice(0, -1).join('.')}
+              {name} {selected.split('.').slice(0, -1).join('.')}
             </p>
           </div>
         </div>
